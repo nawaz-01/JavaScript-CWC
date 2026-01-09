@@ -62,6 +62,6 @@ num1 = num2 = num3 = 2 + 2 // right to left assignment
 console.log(num1, num2, num3);
 
 let gameCounter = 100
-++gameCounter;// pre-increment
+++gameCounter; // pre-increment
 
 console.log(gameCounter);
