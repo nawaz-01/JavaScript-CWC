@@ -65,3 +65,12 @@ let gameCounter = 100
 ++gameCounter; // pre-increment
 
 console.log(gameCounter);
+
+// Link to study
+// https://tc29.es/ecma262/multipage/abstract-operations.html#sec-type-conversion  
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Type_Conversion
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
