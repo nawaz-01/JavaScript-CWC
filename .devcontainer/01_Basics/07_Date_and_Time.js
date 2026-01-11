@@ -10,9 +10,11 @@ console.log(myDate.toISOString()); // Date in ISO string format
 console.log(myDate.toUTCString()); // Date in UTC string format
 console.log(myDate.toLocaleString()); // Date and time in locale string format
 
+
 // Specific date
 let specificDate = new Date('2020-01-01T10:20:30Z');
 console.log(specificDate.toString());
+
 
 // Getters
 console.log(specificDate.getFullYear()); // Get year
@@ -26,6 +28,7 @@ console.log(specificDate.getMilliseconds()); // Get milliseconds (0-999)
 console.log(specificDate.getTime()); // Get time in milliseconds since Jan 1, 1970  
 console.log(specificDate.getTimezoneOffset()); // Get timezone offset in minutes
 
+
 // Setters
 specificDate.setFullYear(2021);
 specificDate.setMonth(5); // June (0-11)
@@ -36,8 +39,8 @@ specificDate.setSeconds(30);
 specificDate.setMilliseconds(500);
 console.log(specificDate.toString());
 
-// Time calculations
 
+// Time calculations
 let startDate = new Date('2022-01-01T00:00:00Z');
 let endDate = new Date('2022-12-31T23:59:59Z'); 
 let timeDiff = endDate - startDate; // Time difference in milliseconds
@@ -63,8 +66,11 @@ console.log(date1 >= date2); // false
 console.log(date1 === date2); // false
 console.log(date1 !== date2); // true   
 console.log(date1.getTime() === date2.getTime()); // false
+
 // Note: Direct comparison of Date objects using === or !== checks for reference equality, not value equality.
 // To compare the actual date values, use getTime() method.
+
+
 // Date Formatting
 console.log(date1.toLocaleDateString('en-US')); // MM/DD/YYYY
 console.log(date1.toLocaleDateString('en-GB')); // DD/MM/YYYY
@@ -72,6 +78,7 @@ console.log(date1.toLocaleDateString('de-DE')); // DD.MM.YYYY
 console.log(date1.toLocaleTimeString('en-US')); // Time in AM/PM format
 console.log(date1.toLocaleTimeString('de-DE')); // Time in 24-hour format
 console.log(date1.toLocaleString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })); // Full date with weekday
+
 
 // Advanced: Date Arithmetic
 let initialDate = new Date('2022-01-01');
@@ -91,7 +98,9 @@ subtractDate.setMonth(subtractDate.getMonth() - 3); // Subtract 3 months
 console.log(`Date after subtracting 3 months: ${subtractDate.toDateString()}`);
 subtractDate.setFullYear(subtractDate.getFullYear() - 2);
 console.log(`Date after subtracting 2 years: ${subtractDate.toDateString()}`); // Subtract 2 years
+
 // Note: When adding or subtracting months or years, be cautious of month-end boundaries and leap years.
+
 
 //Leap Year Check
 function isLeapYear(year) {
@@ -101,6 +110,7 @@ console.log(`Is 2020 a leap year? ${isLeapYear(2020)}`); // true
 console.log(`Is 2021 a leap year? ${isLeapYear(2021)}`); // false
 console.log(`Is 2000 a leap year? ${isLeapYear(2000)}`); // true
 console.log(`Is 1900 a leap year? ${isLeapYear(1900)}`); // false
+
 // Note: A year is a leap year if it is divisible by 4, but not divisible by 100, unless it is also divisible by 400.
 
 // End of Date and Time examples
