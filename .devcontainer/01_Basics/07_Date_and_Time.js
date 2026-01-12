@@ -9,6 +9,8 @@ console.log(myDate.toTimeString()); // Time in string format
 console.log(myDate.toISOString()); // Date in ISO string format
 console.log(myDate.toUTCString()); // Date in UTC string format
 console.log(myDate.toLocaleString()); // Date and time in locale string format
+console.log(myDate.toLocaleDateString()); // Date in locale string format
+console.log(myDate.toLocaleTimeString()); // Time in locale string format   
 
 
 // Specific date
